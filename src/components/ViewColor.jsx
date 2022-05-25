@@ -1,12 +1,12 @@
 import * as React from "react";
 import './../App.css';
 
-function ViewColor() {
+function ViewColor(props) {
 
-    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    let randomColor = '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6);
 
     return (
-        <div className="view-color" style={{'backgroundColor': '#' + randomColor}}>
+        <div className="view-color" style={{ backgroundColor: props.color !== undefined? props.color: randomColor}}>
 
         </div>
     );

@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
         <RandomColor color={randomColor}/>
-        <ListColors/>
+        <ListColors color={randomColor}/>
     </div>
   );
 }
