@@ -10,9 +10,9 @@ function ListColors(props) {
 
     const getColors = (index) => {
         if (index === randPlaceColor) {
-            return <ViewColor key={index} color={color}/>
+            return <ViewColor key={index} randomColor={color} color={color}/>
         }
-        return <ViewColor key={index}/>
+        return <ViewColor key={index} randomColor={color}/>
     };
 
     return (

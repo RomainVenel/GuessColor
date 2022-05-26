@@ -10,7 +10,7 @@ function App() {
     }, []);
     function random_rgba() {
         let o = Math.round, r = Math.random, s = 255;
-        return 'RGB(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ')';
+        return 'rgb(' + o(r()*s) + ', ' + o(r()*s) + ', ' + o(r()*s) + ')';
     }
 
     let randomColor = random_rgba();

@@ -3,8 +3,8 @@ import * as React from "react";
 function RandomColor(props) {
 
     return (
-        <div className={'block-title-color'}>
-            <div className="navbar">
+        <div id={'block-title-color'}>
+            <div className={"navbar"}>
                 <div>Menu</div>
                 <div className={'title'}>Guess Color</div>
                 <div>

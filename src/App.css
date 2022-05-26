@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.block-title-color {
+#block-title-color {
   background-color: cadetblue;
   color: #ffffff;
 }
@@ -26,6 +26,7 @@
 
 .random-color {
   padding-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .grid-colors {
