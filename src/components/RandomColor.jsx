@@ -4,8 +4,13 @@ function RandomColor(props) {
 
     return (
         <div className={'block-title-color'}>
-            <div className="title">
-                Guess Color
+            <div className="navbar">
+                <div>Menu</div>
+                <div className={'title'}>Guess Color</div>
+                <div>
+                    <button>Easy</button>
+                    <button>Hard</button>
+                </div>
             </div>
             <div className="random-color">
                 {props.color}
