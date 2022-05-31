@@ -1,10 +1,10 @@
 import './../App.css';
-import {useContext} from "react";
+import {useContext, useMemo} from "react";
 import {ColorContext} from "../context/colorContext";
 
 function ViewColor(props) {
 
-    let randomColor = '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6);
+    const rc = useMemo(() => '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6), []);
     const { life, setLife } = useContext(ColorContext);
 
     function handleClick(e) {
@@ -15,12 +15,11 @@ function ViewColor(props) {
         } else {
             e.target.style.opacity = 0;
             setLife(life - 1);
-
         }
     }
 
     return (
-        <div className="view-color" style={{ backgroundColor: props.color !== undefined? props.color: randomColor}} onClick={handleClick}>
+        <div className="view-color" style={{ backgroundColor: props.color !== undefined? props.color: rc}} onClick={handleClick}>
 
         </div>
     );
