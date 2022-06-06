@@ -18,7 +18,7 @@ function ListColors(props) {
     };
 
     return (
-        <div>
+        <div className={'block-game'}>
             <NumberLife/>
             <div className="grid-colors">
                 {nbColors.map((number) =>

@@ -8,7 +8,7 @@ function NumberLife() {
     const { life } = useContext(ColorContext);
 
     return (
-        <div>
+        <div className={'block-life'}>
             <div id={'numberLife'}><span>{life}</span>/3</div>
         </div>
     );

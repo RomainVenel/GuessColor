@@ -8,7 +8,7 @@ function RandomColor(props) {
     }
 
     return (
-        <div id={'block-title-color'}>
+        <header id={'block-title-color'}>
             <div className={"navbar"}>
                 <div>Menu</div>
                 <div className={'title'}>Guess Color</div>
@@ -21,7 +21,7 @@ function RandomColor(props) {
             <div className="random-color">
                 {props.color}
             </div>
-        </div>
+        </header>
     );
 }
 
