@@ -68,7 +68,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.cookiesContent {
+.winPopup {
   width: 320px;
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ button.close {
   margin-bottom: 10px;
 }
 img {
-  width: 82px;
+  width: 110px;
   margin-bottom: 15px;
 }
 p {
@@ -107,6 +107,7 @@ button.accept {
   font-size: 16px;
   color: white;
   box-shadow: 0 6px 18px -5px rgba(237, 103, 85, 1);
+  cursor: pointer;
 }
 
 footer {

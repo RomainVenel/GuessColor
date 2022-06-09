@@ -22,14 +22,19 @@ function App() {
 
     let randomColor = useMemo(() =>random_rgba(), []);
 
+    function handleClick(e) {
+        e.preventDefault();
+        window.location.reload(false);
+    }
+
   return (
       <ColorContext.Provider value={value}>
         <div id={'popup-finish'}>
-          <div className="cookiesContent" id="cookiesPopup">
+          <div className="winPopup" id="winPopup">
               <button className="close">✖</button>
-              <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="cookies-img"/>
-              <p>We use cookies for improving user experience, analytics and marketing.</p>
-              <button className="accept">That's fine!</button>
+              <img src={require('./assets/prize.png')} alt="cookies-img"/>
+              <p>Tu as gagné !</p>
+              <button className="accept" onClick={handleClick}>Rejouer</button>
           </div>
         </div>
         <div className="App">
