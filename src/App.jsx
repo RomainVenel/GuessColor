@@ -29,11 +29,19 @@ function App() {
 
   return (
       <ColorContext.Provider value={value}>
-        <div id={'popup-finish'}>
-          <div className="winPopup" id="winPopup">
+        <div id={'popup-win'}>
+          <div className="bodyPopup" id="winPopup">
               <button className="close">✖</button>
               <img src={require('./assets/prize.png')} alt="cookies-img"/>
               <p>Tu as gagné !</p>
+              <button className="accept" onClick={handleClick}>Rejouer</button>
+          </div>
+        </div>
+        <div id={'popup-lose'}>
+          <div className="bodyPopup" id="losePopup">
+              <button className="close">✖</button>
+              <img src={require('./assets/lose.png')} alt="cookies-img"/>
+              <p>Tu as perdu !</p>
               <button className="accept" onClick={handleClick}>Rejouer</button>
           </div>
         </div>
