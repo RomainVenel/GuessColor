@@ -17,16 +17,6 @@ function Footer() {
                         <FaGithub/>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/in/mattwilliams85">
-                    <div className="flex icon" id="icon-2">
-                        <i className="mdi mdi-linkedin"></i>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/mattwilliams85">
-                    <div className="flex icon" id="icon-2">
-                        <i className="mdi mdi-linkedin"></i>
-                    </div>
-                </a>
             </div>
         </footer>
     );

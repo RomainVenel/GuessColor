@@ -5,7 +5,7 @@ function RandomColor(props) {
     return (
         <header id={'block-title-color'}>
             <div className={"navbar"}>
-                <div>Menu</div>
+                <div></div>
                 <div className={'title'}>Guess Color</div>
                 <div>
                     <button>Easy</button>
