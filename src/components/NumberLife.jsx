@@ -2,6 +2,7 @@ import * as React from "react";
 import './../App.css';
 import {useContext} from "react";
 import {ColorContext} from "../context/colorContext";
+import { FaHeart } from "react-icons/fa";
 
 function NumberLife() {
 
@@ -9,7 +10,14 @@ function NumberLife() {
 
     return (
         <div className={'block-life'}>
-            <div id={'numberLife'}><span>{life}</span>/3</div>
+            <div id={'numberLife'}>
+                <div id={'nbLife'}>
+                    {life}
+                    </div>
+                <div id={'heart'}>
+                    <FaHeart style={{'color': '#9b1313'}}/>
+                </div>
+            </div>
         </div>
     );
 }
